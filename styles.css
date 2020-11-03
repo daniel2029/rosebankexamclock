@@ -1,0 +1,105 @@
+#container {
+  width: 100%;
+  height: 100px;
+  background: aqua;
+  margin: auto;
+  padding: 0;
+}
+
+#leftPanel {
+  width: 70%;
+  height: 100px;
+  background: red;
+  float: left;
+}
+
+#rightPanel {
+  margin-left: 70%;
+  height: 100px;
+  background: gray;
+}
+
+#examEventsContainer {
+    
+}
+#examLogoContainer {
+    
+}
+#examAnalogueClockContainer {
+    background-color:black;
+    position: relative;
+    height: 300px;
+
+}
+#examDigitalClockContainer {
+    
+}
+#examDateClockContainer {
+    
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.clock {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    margin: auto;
+    background-color: black;
+    border-radius: 100%;
+    background-image: url("http://junesiphone.com/images/clock.png");
+    background-image: url("https://lh3.googleusercontent.com/proxy/pfRHasbm6WMxcUA9o-nPhQ4CGUVM3GK6MCzSLpdZ0ROlTJzWw40CkhwdvbKNWzkqhNZo_MZHeLYh3YrXqrDHLQ9PtXf9q_HHixnACfw7gWqMMl-S00OTNpyR2-8iaq7_BCkXkfRk8ibS7FPVYOGZyw");
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    width: 250px;
+    height: 250px;
+    background-size: 250px;
+}
+
+.transform {
+    width: 2px;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    margin: auto;
+    -webkit-transform-origin: bottom;
+}
+
+#s {
+    top: -120px;
+    background-color: red;
+    height: 118px;
+}
+
+#m {
+    top: -100px;
+    background-color: black;
+    height: 100px;
+}
+
+#h {
+    top: -80px;
+    background-color: black;
+    height: 70px;
+}
+
+#center {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+/*    background-color: black;*/
+    border-radius: 100%;
+}
