@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RBC Exam Clock</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body onload="startTime()">
+    <div id="container">
+        <div id="leftPanel">
+            <div id="examEventsContainer">
+
+            </div>
+        </div>
+        <div id="rightPanel">
+            <div id="examLogoContainer">
+
+            </div>
+            <div id="examAnalogueClockContainer">
+
+            </div>
+            <div id="examDigitalClockContainer">
+                <div id="DigitalClock"></div>
+            </div>
+            <div id="examDateClockContainer">
+                <div id="DateClock"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    var g = today.getDay();
+    var d = today.getDate();
+    var n = today.getMonth();
+    var y = today.getFullYear();
+    m = checkTime(m);
+    g = checkDay(g);
+    s = checkTime(s);
+    n = checkMonth(n);
+//    document.getElementById('DigitalClock').innerHTML = h + ":" + m + ":" + s;  
+    document.getElementById('DigitalClock').innerHTML = today.toLocaleString('en-AU', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+    document.getElementById('DateClock').innerHTML = today.toLocaleString('en-AU', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'}); 
+//    document.getElementById('DateClock').innerHTML = g + ", " + d + " " + n + " " + y;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+    
+function checkDay(i) {
+    switch(i){
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+    };
+    return day;
+}
+
+function checkMonth(i) {
+    switch(i){
+        case 1:
+            month = "January";
+            break;
+        case 2:
+            month = "February";
+            break;
+        case 3:
+            month = "March";
+            break;
+        case 4:
+            month = "April";
+            break;
+        case 5:
+            month = "May";
+            break;
+        case 6:
+            month = "June";
+        case 7:
+            month = "July";
+            break;
+        case 8:
+            month = "August";
+            break;
+        case 9:
+            month = "September";
+            break;
+        case 10:
+            month = "October";
+            break;
+        case 11:
+            month = "November";
+            break;
+        case 12:
+            month = "December";
+            break;
+    };
+    return month;
+}
+
+</script>
+</html>
