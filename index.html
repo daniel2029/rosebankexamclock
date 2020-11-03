@@ -4,7 +4,9 @@
 <head>
     <title>RBC Exam Clock</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://daniel2029.github.io/rosebankexamclock/bootstrap.min.css">
     <link rel="stylesheet" href="https://daniel2029.github.io/rosebankexamclock/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -20,7 +22,6 @@
 
             </div>
             <div id="examAnalogueClockContainer">s
-<!--                <canvas id="canvas" width="400" height="400"></canvas>-->
                 <div class="clock">
                     <div id="s" class="transform"></div>
                     <div id="m" class="transform"></div>
@@ -29,10 +30,10 @@
                 </div>
             </div>
             <div id="examDigitalClockContainer">
-                <div id="DigitalClock"></div>
+                <div id="DigitalClock" class="timeDisplay" style="font-size: 100px;text-transform: uppercase;font-weight: bold;"></div>
             </div>
             <div id="examDateClockContainer">
-                <div id="DateClock"></div>
+                <div id="DateClock" class="timeDisplay" style="font-size: 50px;font-weight: 0;"></div>
             </div>
         </div>
     </div>
