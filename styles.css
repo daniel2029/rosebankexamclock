@@ -50,10 +50,9 @@
     bottom: 0; 
     right: 0;
     margin: auto;
-    background-color: black;
+    background-color: white;
     border-radius: 100%;
-    background-image: url("http://junesiphone.com/images/clock.png");
-    background-image: url("https://lh3.googleusercontent.com/proxy/pfRHasbm6WMxcUA9o-nPhQ4CGUVM3GK6MCzSLpdZ0ROlTJzWw40CkhwdvbKNWzkqhNZo_MZHeLYh3YrXqrDHLQ9PtXf9q_HHixnACfw7gWqMMl-S00OTNpyR2-8iaq7_BCkXkfRk8ibS7FPVYOGZyw");
+    background-image: url("https://daniel2029.github.io/rosebankexamclock/clock.png");
     width: 100px;
     height: 100px;
     background-size: 100px;
